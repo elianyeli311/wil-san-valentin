@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <audio id="back" src="ka.mp3" loop></audio>
+    <title>feliz San valentin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+        
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ para ti ♡</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <div class="letter-window">
+        <h1 id="letter-title">¿Quieres ser mi san valentin?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>Nota:</strong>💐 toma tus flores bacteria andante te amo♡💐!
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    
+  </body>
+
+  <audio id="miMusica" loop>
+  <source src="yachin_ga_hanbun.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  // Intentar reproducir cuando el usuario haga clic en cualquier parte de la pantalla
+  document.addEventListener('click', function() {
+    var audio = document.getElementById("miMusica");
+    audio.play();
+  }, { once: true }); // El "once: true" hace que solo se ejecute la primera vez
+</script>
+</html>
